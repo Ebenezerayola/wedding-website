@@ -5,7 +5,9 @@ const Landing = () => {
     return(
         <>
             <LandingStyle>
-                <JoinusStyles></JoinusStyles>
+                <JoinusStyles>
+                    <p>Join Us</p>
+                </JoinusStyles>
                 <CouplesNameStyles></CouplesNameStyles>
                 <TimeLocationStyles></TimeLocationStyles>
                 <CouplesImageStyles></CouplesImageStyles>

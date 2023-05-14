@@ -1,12 +1,21 @@
-import { OurStoryContext, OurStoryText, TellMeStory } from "../Style"
+import {
+  BackgroundStory,
+  OurStoryContext,
+  OurStoryText,
+  StoryImage,
+  TellMeStory,
+} from "../Style";
 
 export const StoryTeller = () => {
-    return(
-        <>
-            <TellMeStory>
-                <OurStoryText></OurStoryText>
-                <OurStoryContext></OurStoryContext>
-            </TellMeStory>
-        </>
-    )
-}
+  return (
+    <>
+      <TellMeStory>
+        <BackgroundStory>
+          <OurStoryText></OurStoryText>
+          <OurStoryContext></OurStoryContext>
+        </BackgroundStory>
+        <StoryImage></StoryImage>
+      </TellMeStory>
+    </>
+  );
+};
