@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Photo from "../public/picture1.jpg";
 
 // Layout styles files only
 
@@ -6,38 +7,84 @@ import styled from "styled-components";
 
 export const HeaderStyles = styled.div`
   width: auto;
-  height: 5rem;
-  border: 1px solid black;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
 
   @media (max-width: 728px) {
-    gap: 1rem;
-    height: 4rem;
+    gap: 1.5rem;
+    height: 5rem;
   }
 `;
 
 export const LinkStyles = styled.div`
-  width: 4rem;
+  width: auto;
   height: 2rem;
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: ceenter;
 
   @media (max-width: 728px) {
-    width: 3rem;
+    width: auto;
     height: 1.5rem;
+  }
+
+  a {
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Montaga;
+    color: black;
+
+    @media (max-width: 728px) {
+      font-size: 14px;
+    }
   }
 `;
 
 export const LogoStyles = styled.div`
-  width: 8rem;
-  height: 4rem;
-  border: 1px solid black;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-item: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
-    width: 5rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  div {
+    margin: auto;
+    border: 2px solid #f5b252;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5b252;
+
+    div {
+      width: 90%;
+      height: 50%;
+      border: none;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: Montaga;
+        font-size: 2.2rem;
+
+        @media (max-width: 728px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 `;
 
@@ -45,7 +92,7 @@ export const LogoStyles = styled.div`
 
 export const LandingStyle = styled.div`
   width: auto;
-  height: 110vh;
+  height: 100vh;
   margin-top: 30px;
   padding: 10px;
   display: flex;
@@ -53,103 +100,199 @@ export const LandingStyle = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2%;
+
+  @media (max-width: 728px) {
+    margin-bottom: -40vh;
+  }
 `;
 
 export const JoinusStyles = styled.div`
-  width: 20%;
+  width: 40%;
   height: 4%;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: montaga;
 
   @media (max-width: 728px) {
-    width: 70%;
+    width: 90%;
+    margin-top: -40vh;
   }
 
   p {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 0;
   }
 `;
 
 export const CouplesNameStyles = styled.div`
-  width: 40%;
+  width: 70%;
   height: 15%;
-  border: 1px solid black;
+  font-family: montaga;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
-    width: 80%;
+    height: 10%;
+    width: 90%;
+  }
+
+  p {
+    font-size: 100px;
+
+    @media (max-width: 728px) {
+      font-size: 60px;
+    }
   }
 `;
 
 export const TimeLocationStyles = styled.div`
-  width: 30%;
+  width: 40%;
   height: 5%;
-  border: 1px solid black;
+  font-family: montaga;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
-    width: 70%;
+    width: 90%;
+    height: 3%;
+  }
+
+  p {
+    font-size: 20px;
   }
 `;
 
 export const CouplesImageStyles = styled.div`
   width: 80%;
   height: 70%;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (max-width: 728px) {
+    height: 40%;
+  }
+
+  img {
+    width: 99%;
+    background-position-x: 200px;
+  }
 `;
 
 // Story teller section
 
 export const TellMeStory = styled.div`
   width: auto;
-  height: 150vh;
+  height: 120vh;
   margin-top: 2rem;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   // gap: 2%;
+
+  @media (max-width: 728px) {
+    height: 100vh;
+  }
 `;
 
 export const BackgroundStory = styled.div`
   width: 100%;
-  height: 90vh;
-  border: 2px solid yellow;
+  height: 80vh;
+  background: #a07250;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  padding-top: 10px;
 `;
 
 export const OurStoryText = styled.div`
-  width: 30%;
+  width: 50%;
   height: 10%;
-  border: 1px solid black;
-  margin-top: -9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montaga;
+  color: white;
 
   @media (max-width: 728px) {
     width: 70%;
+    margin-top: -3rem;
+  }
+
+  p {
+    font-size: 56px;
   }
 `;
 
 export const OurStoryContext = styled.div`
   width: 60%;
   height: 50vh;
-  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montaga;
+  color: white;
+  overflow: hidden;
 
   @media (max-width: 728px) {
+    margin-top: -4rem;
     width: 80%;
+  }
+
+  div {
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+
+    p {
+      @media (max-width: 728px) {
+        font-size: 15px;
+      }
+    }
   }
 `;
 
 export const StoryImage = styled.div`
   width: 80%;
-  height: 60vh;
-  border: 1px solid black;
-  margin-top: -5rem;
+  height: 70vh;
+  margin-top: -4rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(${Photo});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -500px;
+
+  @media (max-width: 820px) {
+    margin-top: -100px;
+    background-position-y: -1px;
+    background-size: covered;
+    border: 1px solid black;
+    padding-bottom: -20px;
+    height: 50vh;
+  }
+
+  @media (max-width: 728px) {
+    margin-top: -80px;
+    background-size: contain;
+  }
+
+  @media (max-width: 728px) {
+  }
 `;
 
 // More information on the wedding
@@ -157,17 +300,21 @@ export const StoryImage = styled.div`
 export const MoreInfos = styled.div`
   width: auto;
   height: 171.3vh;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 728px) {
+    height: 150vh;
+  }
 `;
 
 export const Infopadding = styled.div`
   width: 85%;
   height: 95%;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,32 +328,59 @@ export const Infopadding = styled.div`
 
 export const InfoDate = styled.div`
   width: 30%;
-  height: 5rem;
-  border: 1px solid yellow;
+  height: 7rem;
+  // border: 2px solid yellow;
   border-style: outset;
+  font-family: montaga;
 
   @media (max-width: 728px) {
     width: 70%;
-    height: 4rem;
+    height: 8rem;
+  }
+
+  div:first-child {
+    width: 100%;
+    height: 65%;
+    // border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 60px;
+    }
+  }
+
+  div:nth-child(2) {
+    width: 100%;
+    height: 28%;
+    // border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 20px;
+    }
   }
 `;
 
 export const OtherInfo = styled.div`
   width: 98%;
   height: 80%;
-  border: 2px solid green;
+  // border: 2px solid green;
   border-style: dashed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2%;
+  gap: 3%;
 `;
 
 export const WeddingContent = styled.div`
   width: 95%;
   height: 30%;
-  border: 2px solid red;
+  // border: 2px solid red;
   border-style: dotted;
   display: flex;
   flex-direction: row;
@@ -222,25 +396,33 @@ export const WeddingContent = styled.div`
 export const EventTime = styled.div`
   width: 23%;
   height: 10%;
-  border: 2px solid black;
+  // border: 2px solid black;
   border-style: dotted;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montaga;
 
   @media (max-width: 728px) {
     width: 90%;
     margin-top: 0;
+  }
+
+  p {
+    font-size: 20px;
   }
 `;
 
 export const EventInformation = styled.div`
   width: 73%;
   height: 90%;
-  border: 2px solid blue;
+  // border: 2px solid blue;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1%;
+  gap: 1rem;
 
   @media (max-width: 728px) {
     width: 90%;
@@ -249,57 +431,90 @@ export const EventInformation = styled.div`
 `;
 
 export const EventTitle = styled.div`
-  width: 20%;
+  width: 35%;
   height: 13%;
-  border: 2px solid green;
+  // border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montaga;
 
   @media (max-width: 728px) {
-    width: 50%;
+    width: 80%;
+  }
+
+  p {
+    font-size: 30px;
   }
 `;
 
 export const EventDescription = styled.div`
   width: 90%;
-  height: 55%;
-  border: 2px solid blue;
+  height: 40%;
+  // border: 2px solid blue;
+  display: flex;
+  align-item: center;
+  font-family: montaga;
+
+  @media (max-width: 800px) {
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 18px;
+    align-text: justify;
+  }
 `;
 
 export const EventLocation = styled.div`
   width: 30%;
   height: 20%;
-  border: 2px solid purple;
+  // border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  font-family: montaga;
 
   @media (max-width: 728px) {
     width: 50%;
   }
 `;
 
+export const ButtonClick = styled.button`
+  width: auto;
+  height: 80%;
+  margin: auto;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+  font-family: montaga;
+`;
 
 // Phot Layout
 
 export const DisplayPhotos = styled.div`
   width: auto;
-  height: 80vh;
+  height: 100vh;
   border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 728px){
-    height: 210vh;
+  @media (max-width: 728px) {
+    height: 230vh;
   }
 `;
 
 export const ContainerPicture = styled.div`
   width: 80%;
-  height: 90%;
+  height: 95%;
   border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1%;
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     width: 95%;
     height: 99%;
   }
@@ -310,7 +525,7 @@ export const PhotoTitle = styled.div`
   height: 10%;
   border: 1px solid red;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     width: 70%;
     height: 3rem;
   }
@@ -326,7 +541,7 @@ export const PotoContainer = styled.div`
   flex-wrap: wrap;
   gap: 1%;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     height: 95%;
   }
 `;
@@ -351,38 +566,40 @@ export const ThePicture = styled.div`
   width: 80%;
   height: 35%;
   border: 1px solid red;
+  background-image: url(${Photo});
+  background-size: cover;
 `;
 
 export const TheOtherPicture = styled.div`
   width: 80%;
   height: 62%;
   border: 1px solid blue;
+  background-image: url(${Photo});
+  background-size: cover;
 `;
-
 
 // Footer
 export const FooterStyle = styled.div`
   width: auto;
   height: 30vh;
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2%;
+  background: #a07250;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     height: 20vh;
   }
 `;
-
 
 export const ColorCode = styled.div`
   width: 30%;
   height: 20%;
   border: 1px solid black;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     width: 90%;
   }
 `;
@@ -392,7 +609,7 @@ export const RsvP = styled.div`
   height: 30%;
   border: 1px solid black;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     width: 90%;
   }
 `;
@@ -402,7 +619,13 @@ export const PoweredBy = styled.div`
   height: 20%;
   border: 1px solid black;
 
-  @media (max-width: 728px){
+  @media (max-width: 728px) {
     width: 90%;
   }
+`;
+
+// For Modal
+
+export const ModalStyle = styled.div`
+  position: absolute;
 `;
