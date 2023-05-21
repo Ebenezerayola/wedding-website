@@ -74,10 +74,22 @@ export const MoreInfomation = () => {
               </EventInformation>
             </WeddingContent>
             <WeddingContent>
-              <EventTime></EventTime>
+              <EventTime>
+                <p>7am - 12pm</p>
+              </EventTime>
               <EventInformation>
-                <EventTitle></EventTitle>
-                <EventDescription></EventDescription>
+                <EventTitle>
+                  <p>Church Wedding</p>
+                </EventTitle>
+                <EventDescription>
+                  <p>
+                    Purus pretium egestas ultricies tempus sit elit. Maecenas
+                    pellentesque sit eros vitae. Maecenas suspendisse tincidunt
+                    ullamcorper justo neque quis et, laoreet. Vitae lacus,
+                    aliquet lorem mauris, sit dolor sodales. Nullam quam quis
+                    lorem dui tristique massa enim.
+                  </p>
+                </EventDescription>
                 <EventLocation>
                   <ButtonClick onClick={handleButtonClick}>
                     Map to Venue
@@ -86,10 +98,22 @@ export const MoreInfomation = () => {
               </EventInformation>
             </WeddingContent>
             <WeddingContent>
-              <EventTime></EventTime>
+              <EventTime>
+                <p>7am - 12pm</p>
+              </EventTime>
               <EventInformation>
-                <EventTitle></EventTitle>
-                <EventDescription></EventDescription>
+                <EventTitle>
+                  <p>Reception</p>
+                </EventTitle>
+                <EventDescription>
+                  <p>
+                    Purus pretium egestas ultricies tempus sit elit. Maecenas
+                    pellentesque sit eros vitae. Maecenas suspendisse tincidunt
+                    ullamcorper justo neque quis et, laoreet. Vitae lacus,
+                    aliquet lorem mauris, sit dolor sodales. Nullam quam quis
+                    lorem dui tristique massa enim.
+                  </p>
+                </EventDescription>
                 <EventLocation>
                   <ButtonClick onClick={handleButtonClick}>
                     Map to Venue

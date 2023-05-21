@@ -187,7 +187,7 @@ export const CouplesImageStyles = styled.div`
 
 export const TellMeStory = styled.div`
   width: auto;
-  height: 120vh;
+  height: 150vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -202,7 +202,7 @@ export const TellMeStory = styled.div`
 
 export const BackgroundStory = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background: #a07250;
   display: flex;
   flex-direction: column;
@@ -281,13 +281,13 @@ export const StoryImage = styled.div`
     margin-top: -100px;
     background-position-y: -1px;
     background-size: covered;
-    border: 1px solid black;
     padding-bottom: -20px;
     height: 50vh;
   }
 
   @media (max-width: 728px) {
     margin-top: -80px;
+    height: 70vh;
     background-size: contain;
   }
 
@@ -330,7 +330,7 @@ export const InfoDate = styled.div`
   width: 30%;
   height: 7rem;
   // border: 2px solid yellow;
-  border-style: outset;
+  // border-style: outset;
   font-family: montaga;
 
   @media (max-width: 728px) {
@@ -369,7 +369,7 @@ export const OtherInfo = styled.div`
   width: 98%;
   height: 80%;
   // border: 2px solid green;
-  border-style: dashed;
+  // border-style: dashed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,7 +381,7 @@ export const WeddingContent = styled.div`
   width: 95%;
   height: 30%;
   // border: 2px solid red;
-  border-style: dotted;
+  // border-style: dotted;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -397,8 +397,8 @@ export const EventTime = styled.div`
   width: 23%;
   height: 10%;
   // border: 2px solid black;
-  border-style: dotted;
-  margin-top: 10px;
+  // border-style: dotted;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -436,7 +436,7 @@ export const EventTitle = styled.div`
   // border: 2px solid green;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   font-family: montaga;
 
   @media (max-width: 728px) {
@@ -472,7 +472,7 @@ export const EventLocation = styled.div`
   // border: 2px solid purple;
   display: flex;
   align-items: center;
-  justify-content: center
+  // justify-content: center;
   font-family: montaga;
 
   @media (max-width: 728px) {
@@ -481,9 +481,9 @@ export const EventLocation = styled.div`
 `;
 
 export const ButtonClick = styled.button`
-  width: auto;
+  width: 80%;
   height: 80%;
-  margin: auto;
+  // margin: auto;
   border-radius: 1px;
   border: none;
   cursor: pointer;
@@ -495,7 +495,7 @@ export const ButtonClick = styled.button`
 export const DisplayPhotos = styled.div`
   width: auto;
   height: 100vh;
-  border: 2px solid red;
+  // border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,7 +508,7 @@ export const DisplayPhotos = styled.div`
 export const ContainerPicture = styled.div`
   width: 80%;
   height: 95%;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -523,7 +523,7 @@ export const ContainerPicture = styled.div`
 export const PhotoTitle = styled.div`
   width: 30%;
   height: 10%;
-  border: 1px solid red;
+  // border: 1px solid red;
 
   @media (max-width: 728px) {
     width: 70%;
@@ -534,7 +534,7 @@ export const PhotoTitle = styled.div`
 export const PotoContainer = styled.div`
   width: 100%;
   height: 85%;
-  border: 2px solid blue;
+  // border: 2px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,7 +549,7 @@ export const PotoContainer = styled.div`
 export const PictureFlex = styled.div`
   width: 32%;
   height: 95%;
-  border: 1px solid green;
+  // border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -565,7 +565,7 @@ export const PictureFlex = styled.div`
 export const ThePicture = styled.div`
   width: 80%;
   height: 35%;
-  border: 1px solid red;
+  // border: 1px solid red;
   background-image: url(${Photo});
   background-size: cover;
 `;
@@ -573,7 +573,7 @@ export const ThePicture = styled.div`
 export const TheOtherPicture = styled.div`
   width: 80%;
   height: 62%;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   background-image: url(${Photo});
   background-size: cover;
 `;
@@ -597,7 +597,7 @@ export const FooterStyle = styled.div`
 export const ColorCode = styled.div`
   width: 30%;
   height: 20%;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   @media (max-width: 728px) {
     width: 90%;
@@ -607,7 +607,7 @@ export const ColorCode = styled.div`
 export const RsvP = styled.div`
   width: 30%;
   height: 30%;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   @media (max-width: 728px) {
     width: 90%;
@@ -617,7 +617,7 @@ export const RsvP = styled.div`
 export const PoweredBy = styled.div`
   width: 30%;
   height: 20%;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   @media (max-width: 728px) {
     width: 90%;
