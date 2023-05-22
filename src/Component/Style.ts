@@ -488,6 +488,8 @@ export const ButtonClick = styled.button`
   border: none;
   cursor: pointer;
   font-family: montaga;
+  background-color: #A07250;
+  color: white;
 `;
 
 // Phot Layout
@@ -543,6 +545,10 @@ export const PotoContainer = styled.div`
 
   @media (max-width: 728px) {
     height: 95%;
+  }
+
+  @media (max-width: 820px){
+    border: 1px solid black;
   }
 `;
 
