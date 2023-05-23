@@ -289,7 +289,6 @@ export const OurStoryContext = styled.div`
   @media (max-width: 728px) {
     margin-top: -2rem;
     height: 110vh;
-    border: 1px solid black;
   }
 
   div {
@@ -597,6 +596,10 @@ export const DisplayPhotos = styled.div`
   justify-content: center;
   // border: 2px solid black;
 
+  @media (max-width: 820px){
+    height: 100vh;
+  }
+
   @media (max-width: 728px) {
     height: 66vh;
     margin-top: 0rem;
@@ -651,9 +654,9 @@ export const PotoContainer = styled.div`
   justify-content: center;
   // flex-wrap: wrap;
   gap: 10px;
-  border: 2px solid red;
+  // border: 2px solid red;
 
-  @media (max-width: 728px) {
+  @media (max-width: 820px) {
     // height: 10%;
     border: none;
     flex-direction: column;
@@ -682,7 +685,7 @@ export const PictureFlex = styled.div`
   @media (max-width: 820px) {
   }
 
-  @media (max-width: 728px) {
+  @media (max-width: 820px) {
     display: none;
     width: 97%;
     height: 40%;
@@ -747,7 +750,7 @@ export const SecondPictureFlex = styled.div`
   @media (max-width: 820px) {
   }
 
-  @media (max-width: 728px) {
+  @media (max-width: 820px) {
     display: none;
     width: 97%;
     height: 40%;
@@ -814,7 +817,7 @@ export const ThirdPictureFlex = styled.div`
   @media (max-width: 820px) {
   }
 
-  @media (max-width: 728px) {
+  @media (max-width: 820px) {
     display: none;
     width: 97%;
     height: 40%;
@@ -918,6 +921,11 @@ export const ColorCode = styled.div`
   width: 30%;
   height: 20%;
   // border: 1px solid black;
+  font-family: montaga;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
     width: 90%;
@@ -928,9 +936,28 @@ export const RsvP = styled.div`
   width: 30%;
   height: 30%;
   // border: 1px solid black;
+  font-family: montaga;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
     width: 90%;
+  }
+
+  p{
+    line-height: 1px;
+  }
+
+  p:nth-child(2){
+    margin-top: -2px;
+    // border: 1px solid black;
+  }
+
+  p:last-child{
+    margin-top: -2px;
   }
 `;
 
@@ -938,6 +965,11 @@ export const PoweredBy = styled.div`
   width: 30%;
   height: 20%;
   // border: 1px solid black;
+  font-family: montaga;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 728px) {
     width: 90%;
