@@ -548,6 +548,7 @@ export const EventDescription = styled.div`
     margin-top: -4rem;
     overflow: hidden;
     width: 100%;
+    height: 3rem;
   }
 
   p {
@@ -952,12 +953,12 @@ export const RsvP = styled.div`
   }
 
   p:nth-child(2){
-    margin-top: -2px;
+    margin-top: 2px;
     // border: 1px solid black;
   }
 
   p:last-child{
-    margin-top: -2px;
+    margin-top: 2px;
   }
 `;
 
