@@ -17,7 +17,7 @@ const Landing = () => {
         </JoinusStyles>
 
         <CouplesNameStyles>
-          <p>Fiyin & Ayo</p>
+          <p>Fiyin <span>&</span> Ayo</p>
         </CouplesNameStyles>
         <TimeLocationStyles>
           <p>June 24, 2023 - Eleyele, Ibadan</p>

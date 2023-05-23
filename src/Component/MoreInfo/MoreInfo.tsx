@@ -13,111 +13,92 @@ import {
   EventLocation,
   ButtonClick,
   ModalStyle,
+  ModalBorder,
+  Ptag,
 } from "../Style";
 
 export const MoreInfomation = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleButtonClick = () => {
-    setIsModalOpen(true);
-  };
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
+  const openNewTab = (url: string) => {
+    window.open(url, "_blank");
   };
 
+  const handleClick = () => {
+    const url = "https://maps.app.goo.gl/NgGRu2o8EwQzedpU7";
+    openNewTab(url);
+  };
+
+  const handleClicks = () => {
+    const url = "https://maps.app.goo.gl/PEMZ5cxzzwonNNs67";
+    openNewTab(url);
+  };
   return (
     <>
       <MoreInfos>
-        <ModalStyle>
-          {" "}
-          {isModalOpen && (
-            <div className="modal" style={{ width: "100px", height: "100px" }}>
-              <div className="modal-content">
-                <h2>Modal Content</h2>
-                <ButtonClick onClick={handleCloseModal}>Close</ButtonClick>
-              </div>
-            </div>
-          )}
-        </ModalStyle>
         <Infopadding>
           <InfoDate>
             <div>
               <p>Itinerary</p>
             </div>
             <div>
-              <p>Saturday, June 23</p>
+              <p style={{ color: "#A07250" }}>Saturday, June 23</p>
             </div>
           </InfoDate>
 
           <OtherInfo>
             <WeddingContent>
               <EventTime>
-                <p>7am - 12pm</p>
+                <Ptag>7AM</Ptag>
+                <p>Engagement</p>
               </EventTime>
               <EventInformation>
                 <EventTitle>
-                  <p>Engagement</p>
+                  <p>7AM</p>
                 </EventTitle>
                 <EventDescription>
                   <p>
-                    Purus pretium egestas ultricies tempus sit elit. Maecenas
-                    pellentesque sit eros vitae. Maecenas suspendisse tincidunt
-                    ullamcorper justo neque quis et, laoreet. Vitae lacus,
-                    aliquet lorem mauris, sit dolor sodales. Nullam quam quis
-                    lorem dui tristique massa enim.
+                    Mayjoy event hall, Afin iyanu junction, ologuneru,
+                    Eleyele road. Ibadan.
                   </p>
                 </EventDescription>
                 <EventLocation>
-                  <ButtonClick onClick={handleButtonClick}>
-                    Map to Venue
-                  </ButtonClick>
+                  <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
                 </EventLocation>
               </EventInformation>
             </WeddingContent>
             <WeddingContent>
               <EventTime>
-                <p>7am - 12pm</p>
+                <Ptag>7AM</Ptag>
+                <p>Church Wedding</p>
               </EventTime>
               <EventInformation>
                 <EventTitle>
-                  <p>Church Wedding</p>
+                  <p>7AM</p>
                 </EventTitle>
                 <EventDescription>
-                  <p>
-                    Purus pretium egestas ultricies tempus sit elit. Maecenas
-                    pellentesque sit eros vitae. Maecenas suspendisse tincidunt
-                    ullamcorper justo neque quis et, laoreet. Vitae lacus,
-                    aliquet lorem mauris, sit dolor sodales. Nullam quam quis
-                    lorem dui tristique massa enim.
-                  </p>
+                  <p>Eleyele Baptist Church, Eleyele Ibadan.</p>
                 </EventDescription>
                 <EventLocation>
-                  <ButtonClick onClick={handleButtonClick}>
-                    Map to Venue
-                  </ButtonClick>
+                  <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
                 </EventLocation>
               </EventInformation>
             </WeddingContent>
             <WeddingContent>
               <EventTime>
-                <p>7am - 12pm</p>
+                <Ptag>7AM</Ptag>
+                <p>Reception</p>
               </EventTime>
               <EventInformation>
                 <EventTitle>
-                  <p>Reception</p>
+                  <p>7AM</p>
                 </EventTitle>
                 <EventDescription>
                   <p>
-                    Purus pretium egestas ultricies tempus sit elit. Maecenas
-                    pellentesque sit eros vitae. Maecenas suspendisse tincidunt
-                    ullamcorper justo neque quis et, laoreet. Vitae lacus,
-                    aliquet lorem mauris, sit dolor sodales. Nullam quam quis
-                    lorem dui tristique massa enim.
+                    Mayjoy event hall, Afin iyanu junction, ologuneru,
+                    Eleyele road. Ibadan
                   </p>
                 </EventDescription>
                 <EventLocation>
-                  <ButtonClick onClick={handleButtonClick}>
-                    Map to Venue
-                  </ButtonClick>
+                  <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
                 </EventLocation>
               </EventInformation>
             </WeddingContent>

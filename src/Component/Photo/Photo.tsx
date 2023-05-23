@@ -6,6 +6,8 @@ import {
   PictureFlex,
   ThePicture,
   TheOtherPicture,
+  SecondPictureFlex,
+  ThirdPictureFlex,
 } from "../Style";
 
 const PhotoDisplay = () => {
@@ -13,22 +15,27 @@ const PhotoDisplay = () => {
     <>
       <DisplayPhotos>
         <ContainerPicture>
-          <PhotoTitle></PhotoTitle>
+          <PhotoTitle>
+            <p>#F&A</p>
+          </PhotoTitle>
           <PotoContainer>
             <PictureFlex>
-              <ThePicture></ThePicture>
-              <TheOtherPicture></TheOtherPicture>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
             </PictureFlex>
-            <PictureFlex
-                style={{flexDirection: 'column-reverse'}}
-            >
-              <ThePicture></ThePicture>
-              <TheOtherPicture></TheOtherPicture>
-            </PictureFlex>
-            <PictureFlex>
-              <ThePicture></ThePicture>
-              <TheOtherPicture></TheOtherPicture>
-            </PictureFlex>
+            <SecondPictureFlex>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </SecondPictureFlex>
+            <ThirdPictureFlex>
+              <div></div>
+              <div></div>
+              <div></div>
+            </ThirdPictureFlex>
           </PotoContainer>
         </ContainerPicture>
       </DisplayPhotos>
