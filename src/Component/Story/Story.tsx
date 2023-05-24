@@ -13,11 +13,8 @@ export const StoryTeller = () => {
     <>
       <TellMeStory>
         <BackgroundStory>
-          <OurStoryText>
-            <p>Our Story</p>
-          </OurStoryText>
-          <OurStoryContext>
-            <div>
+        <p>Our Story</p>
+        <div>
               <p>
                 From Crispy Beginnings to Golden Bliss: Our Toasty Love Story
               </p>
@@ -69,7 +66,6 @@ export const StoryTeller = () => {
               </p>
               <p>God is indeed Love.</p>
             </div>
-          </OurStoryContext>
         </BackgroundStory>
         <StoryImage></StoryImage>
       </TellMeStory>
@@ -83,6 +79,7 @@ const TellMeStory = styled.div`
 
 const BackgroundStory = styled.div`
   background: #a07250;
+  padding-bottom: 100px;
 `;
 
 const OurStoryText = styled.div``;
