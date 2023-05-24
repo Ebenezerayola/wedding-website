@@ -81,3 +81,6 @@ export const StoryTeller = () => {
 const TellMeStory = styled.div``;
 
 const BackgroundStory = styled.div``;
+
+const StoryImage = styled.div``;
+
