@@ -77,12 +77,13 @@ export const StoryTeller = () => {
   );
 };
 
-
 const TellMeStory = styled.div`
   border: 2px solid black;
 `;
 
-const BackgroundStory = styled.div``;
+const BackgroundStory = styled.div`
+  height: 50vh;
+  background: #a07250;
+`;
 
 const StoryImage = styled.div``;
-
