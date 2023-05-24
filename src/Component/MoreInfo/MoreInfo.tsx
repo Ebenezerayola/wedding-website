@@ -74,7 +74,7 @@ export const MoreInfomation = () => {
               <p>Eleyele Baptist Church, Eleyele Ibadan.</p>
             </EventDescription>
             <EventLocation>
-              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
+              <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
             </EventLocation>
           </EventInformation>
         </OtherInfo>
