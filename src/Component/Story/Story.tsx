@@ -82,9 +82,7 @@ const BackgroundStory = styled.div`
   padding-bottom: 100px;
 `;
 
-const OurStoryText = styled.div``;
 
-const OurStoryContext = styled.div``;
 
 
 const StoryImage = styled.div``;
