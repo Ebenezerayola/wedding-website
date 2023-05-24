@@ -37,7 +37,7 @@ const LandingStyle = styled.div`
   gap: 2%;
 
   @media (max-width: 728px) {
-    margin-bottom: -40vh;
+    // margin-bottom: -40vh;
   }
 `;
 
@@ -60,7 +60,10 @@ const JoinusStyles = styled.div`
     font-weight: 400;
     color: #2a1105;
     line-height: 5px;
-
+    
+    @media (max-width: 728px) {
+      font-size: 50px;
+    }
     span {
       color: #f5b252;
     }

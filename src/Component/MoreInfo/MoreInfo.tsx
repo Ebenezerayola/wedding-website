@@ -1,21 +1,22 @@
 import { useState } from "react";
+import { styled } from "styled-components";
 
-import {
-  MoreInfos,
-  Infopadding,
-  InfoDate,
-  OtherInfo,
-  WeddingContent,
-  EventTime,
-  EventInformation,
-  EventTitle,
-  EventDescription,
-  EventLocation,
-  ButtonClick,
-  ModalStyle,
-  ModalBorder,
-  Ptag,
-} from "../Style";
+// import {
+//   MoreInfos,
+//   Infopadding,
+//   InfoDate,
+//   OtherInfo,
+//   WeddingContent,
+//   EventTime,
+//   EventInformation,
+//   EventTitle,
+//   EventDescription,
+//   EventLocation,
+//   ButtonClick,
+//   ModalStyle,
+//   ModalBorder,
+//   Ptag,
+// } from "../Style";
 
 export const MoreInfomation = () => {
   const openNewTab = (url: string) => {
@@ -47,7 +48,6 @@ export const MoreInfomation = () => {
           <OtherInfo>
             <WeddingContent>
               <EventTime>
-                <Ptag>7AM</Ptag>
                 <p>Engagement</p>
               </EventTime>
               <EventInformation>
@@ -65,7 +65,7 @@ export const MoreInfomation = () => {
                 </EventLocation>
               </EventInformation>
             </WeddingContent>
-            <WeddingContent>
+            {/* <WeddingContent>
               <EventTime>
                 <Ptag>7AM</Ptag>
                 <p>Church Wedding</p>
@@ -81,8 +81,8 @@ export const MoreInfomation = () => {
                   <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
                 </EventLocation>
               </EventInformation>
-            </WeddingContent>
-            <WeddingContent>
+            </WeddingContent> */}
+            {/* <WeddingContent>
               <EventTime>
                 <Ptag>7AM</Ptag>
                 <p>Reception</p>
@@ -101,10 +101,24 @@ export const MoreInfomation = () => {
                   <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
                 </EventLocation>
               </EventInformation>
-            </WeddingContent>
+            </WeddingContent> */}
           </OtherInfo>
         </Infopadding>
       </MoreInfos>
     </>
   );
 };
+
+const MoreInfos = styled.div``;
+
+const Infopadding = styled.div``;
+
+
+const InfoDate = styled.div``;
+
+const OtherInfo = styled.div``;
+
+const WeddingContent = styled.div``;
+
+
+
