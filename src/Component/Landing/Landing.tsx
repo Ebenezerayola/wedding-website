@@ -10,23 +10,29 @@ import { styled } from "styled-components";
 // } from "../Style";
 
 const Landing = () => {
+
+  const Alignment = {
+    display: "flex",
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
   return (
     <>
-      <LandingStyle>
-        <JoinusStyles>
-          <p>Join Us to celebrate</p>
-          <p>Fiyin <span>&</span> Ayo</p>
-          <p>June 24, 2023 - Eleyele, Ibadan</p>
-        </JoinusStyles>
+      <div style={Alignment}>
+        <LandingStyle>
+          <JoinusStyles>
+            <p>Join Us to celebrate</p>
+            <p>
+              Fiyin <span>&</span> Ayo
+            </p>
+            <p>June 24, 2023 - Eleyele, Ibadan</p>
+          </JoinusStyles>
 
-        <CouplesNameStyles>
-        </CouplesNameStyles>
-        <TimeLocationStyles>
-        </TimeLocationStyles>
-        <CouplesImageStyles>
-          <img src={Picture} alt="couples_image" />
-        </CouplesImageStyles>
-      </LandingStyle>
+          <CouplesImageStyles>
+            <img src={Picture} alt="couples_image" />
+          </CouplesImageStyles>
+        </LandingStyle>
+      </div>
     </>
   );
 };
@@ -35,6 +41,7 @@ export default Landing;
 
 const LandingStyle = styled.div`
   gap: 2%;
+  width: 78%;
 
   @media (max-width: 728px) {
     // margin-bottom: -40vh;
@@ -44,23 +51,23 @@ const LandingStyle = styled.div`
 const JoinusStyles = styled.div`
   text-align: center;
 
-  p:first-child{
+  p:first-child {
     font-family: montaga;
     font-size: 24px;
     font-weight: 400;
     color: #2a1105;
 
-    @media (max-width: 820px) {}
-    
+    @media (max-width: 820px) {
+    }
   }
 
-  p:nth-child(2){
+  p:nth-child(2) {
     font-family: montaga;
     font-size: 101px;
     font-weight: 400;
     color: #2a1105;
     line-height: 5px;
-    
+
     @media (max-width: 728px) {
       font-size: 50px;
     }
@@ -69,14 +76,12 @@ const JoinusStyles = styled.div`
     }
   }
 
-  p:nth-child(3){
+  p:nth-child(3) {
     font-family: montaga;
     font-size: 24px;
     font-weight: 400;
     color: #2a1105;
-
   }
-
 `;
 
 const CouplesNameStyles = styled.div``;
@@ -86,9 +91,7 @@ const TimeLocationStyles = styled.div``;
 const CouplesImageStyles = styled.div`
   // width: 100%;
 
-  img{
+  img {
     width: 100%;
   }
 `;
-
-
