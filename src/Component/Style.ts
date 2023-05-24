@@ -182,19 +182,19 @@ export const TimeLocationStyles = styled.div`
 `;
 
 export const CouplesImageStyles = styled.div`
-  width: 95%;
+  width: 100%;
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media (max-width: 728px) {
     height: 40%;
   }
 
   img {
-    width: 99%;
+    width: 100%;
     background-position-x: 200px;
   }
 `;
@@ -202,28 +202,29 @@ export const CouplesImageStyles = styled.div`
 // Story teller section
 
 export const TellMeStory = styled.div`
-  width: auto;
-  height: 150vh;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // width: auto;
+  // height: 150vh;
+  // margin-top: 2rem;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   // gap: 2%;
+  border: 2px solid red;
 
   @media (max-width: 820px) {
-    margin-top: -20rem;
+    // margin-top: -20rem;
   }
 
   @media (max-width: 728px) {
-    margin-top: 3rem;
-    height: 200vh;
+    // margin-top: 3rem;
+    // height: 200vh;
   }
 `;
 
 export const BackgroundStory = styled.div`
   width: 100%;
-  height: 120vh;
+  // height: 120vh;
   background: #a07250;
   display: flex;
   flex-direction: column;
@@ -233,62 +234,62 @@ export const BackgroundStory = styled.div`
   padding-top: 10px;
 
   @media (max-width: 820px) {
-    height: 40vh;
+    // height: 40vh;
   }
 
   @media (max-width: 728px) {
-    height: 180vh;
+    // height: 180vh;
   }
 `;
 
 export const OurStoryText = styled.div`
-  width: 50%;
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: montaga;
-  color: white;
-  margin-top: -12rem;
+  // width: 50%;
+  // height: 10%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // font-family: montaga;
+  // color: white;
+  // margin-top: -12rem;
 
-  @media (max-width: 820px) {
-    width: 70%;
-    margin-top: -4rem;
-  }
+  // @media (max-width: 820px) {
+  //   width: 70%;
+  //   margin-top: -4rem;
+  // }
 
-  @media (max-width: 728px) {
-    margin-top: -7rem;
-  }
+  // @media (max-width: 728px) {
+  //   margin-top: -7rem;
+  // }
 
-  p {
-    font-size: 56px;
+  // p {
+  //   font-size: 56px;
 
-    @media (max-width: 820px) {
-      font-size: 42px;
-      margin-top: 60px;
-    }
-  }
+  //   @media (max-width: 820px) {
+  //     font-size: 42px;
+  //     margin-top: 60px;
+  //   }
+  // }
 `;
 
 export const OurStoryContext = styled.div`
   width: 95%;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // height: 50vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   font-family: montaga;
   color: white;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media (max-width: 820px) {
     margin-top: -4rem;
     width: 100%;
-    height: 33vh;
+    // height: 33vh;
   }
 
   @media (max-width: 728px) {
     margin-top: -2rem;
-    height: 110vh;
+    // height: 110vh;
   }
 
   div {
@@ -321,56 +322,56 @@ export const OurStoryContext = styled.div`
 `;
 
 export const StoryImage = styled.div`
-  width: 80%;
-  height: 70vh;
-  margin-top: -4rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(${Photo1});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -500px;
+  // width: 80%;
+  // height: 70vh;
+  // margin-top: -4rem;
+  // overflow: hidden;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // background-image: url(${Photo1});
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position-y: -500px;
 
-  @media (max-width: 820px) {
-    margin-top: -100px;
-    background-position-y: -1px;
-    background-size: covered;
-    padding-bottom: -20px;
-    height: 50vh;
-    width: 90%;
-  }
+  // @media (max-width: 820px) {
+  //   margin-top: -100px;
+  //   background-position-y: -1px;
+  //   background-size: covered;
+  //   padding-bottom: -20px;
+  //   height: 50vh;
+  //   width: 90%;
+  // }
 
-  @media (max-width: 728px) {
-    margin-top: -80px;
-    height: 70vh;
-    background-size: contain;
-  }
+  // @media (max-width: 728px) {
+  //   margin-top: -80px;
+  //   height: 70vh;
+  //   background-size: contain;
+  // }
 
-  @media (max-width: 728px) {
-  }
+  // @media (max-width: 728px) {
+  // }
 `;
 
 // More information on the wedding
 
 export const MoreInfos = styled.div`
-  width: auto;
-  height: 171.3vh;
-  // border: 1px solid blue;
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // width: auto;
+  // height: 171.3vh;
+  // // border: 1px solid blue;
+  // margin-top: 40px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
-  @media (max-width: 820px) {
-    margin-top: -40vh;
-  }
+  // @media (max-width: 820px) {
+  //   margin-top: -40vh;
+  // }
 
-  @media (max-width: 728px) {
-    margin-top: -4rem;
-    height: 150vh;
-  }
+  // @media (max-width: 728px) {
+  //   margin-top: -4rem;
+  //   height: 150vh;
+  // }
 `;
 
 export const Infopadding = styled.div`

@@ -1,20 +1,22 @@
-import {
-  BackgroundStory,
-  OurStoryContext,
-  OurStoryText,
-  StoryImage,
-  TellMeStory,
-} from "../Style";
+// import {
+//   BackgroundStory,
+//   OurStoryContext,
+//   OurStoryText,
+//   StoryImage,
+//   TellMeStory,
+// } from "../Style";
+
+import { styled } from "styled-components";
 
 export const StoryTeller = () => {
   return (
     <>
       <TellMeStory>
         <BackgroundStory>
-          <OurStoryText>
+          {/* <OurStoryText>
             <p>Our Story</p>
-          </OurStoryText>
-          <OurStoryContext>
+          </OurStoryText> */}
+          {/* <OurStoryContext>
             <div>
               <p>
                 From Crispy Beginnings to Golden Bliss: Our Toasty Love Story
@@ -67,10 +69,15 @@ export const StoryTeller = () => {
               </p>
               <p>God is indeed Love.</p>
             </div>
-          </OurStoryContext>
+          </OurStoryContext> */}
         </BackgroundStory>
         <StoryImage></StoryImage>
       </TellMeStory>
     </>
   );
 };
+
+
+const TellMeStory = styled.div``;
+
+const BackgroundStory = styled.div``;
