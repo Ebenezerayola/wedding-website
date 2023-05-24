@@ -78,7 +78,7 @@ const TellMeStory = styled.div`
 
 const BackgroundStory = styled.div`
   background: #a07250;
-  padding-bottom: 50px;
+  padding-bottom: 250px;
   text-align: center;
   color: white;
   font-family: montaga;
@@ -117,7 +117,7 @@ const BackgroundStory = styled.div`
 `;
 
 const StoryImage = styled.div`
-  margin-top: -2rem;
+  margin-top: -12rem;
   display: flex;
   align-content: center;
 

@@ -35,90 +35,155 @@ export const MoreInfomation = () => {
   return (
     <>
       <MoreInfos>
-        <Infopadding>
-          <InfoDate>
-            <div>
-              <p>Itinerary</p>
-            </div>
-            <div>
-              <p style={{ color: "#A07250" }}>Saturday, June 23</p>
-            </div>
-          </InfoDate>
+        <InfoDate>
+          <div>
+            <p>Itinerary</p>
+          </div>
+          <div>
+            <p style={{ color: "#A07250" }}>Saturday, June 23</p>
+          </div>
+        </InfoDate>
 
-          <OtherInfo>
-            <WeddingContent>
-              <EventTime>
-                <p>Engagement</p>
-              </EventTime>
-              <EventInformation>
-                <EventTitle>
-                  <p>7AM</p>
-                </EventTitle>
-                <EventDescription>
-                  <p>
-                    Mayjoy event hall, Afin iyanu junction, ologuneru,
-                    Eleyele road. Ibadan.
-                  </p>
-                </EventDescription>
-                <EventLocation>
-                  <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
-                </EventLocation>
-              </EventInformation>
-            </WeddingContent>
-            {/* <WeddingContent>
-              <EventTime>
-                <Ptag>7AM</Ptag>
-                <p>Church Wedding</p>
-              </EventTime>
-              <EventInformation>
-                <EventTitle>
-                  <p>7AM</p>
-                </EventTitle>
-                <EventDescription>
-                  <p>Eleyele Baptist Church, Eleyele Ibadan.</p>
-                </EventDescription>
-                <EventLocation>
-                  <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
-                </EventLocation>
-              </EventInformation>
-            </WeddingContent> */}
-            {/* <WeddingContent>
-              <EventTime>
-                <Ptag>7AM</Ptag>
-                <p>Reception</p>
-              </EventTime>
-              <EventInformation>
-                <EventTitle>
-                  <p>7AM</p>
-                </EventTitle>
-                <EventDescription>
-                  <p>
-                    Mayjoy event hall, Afin iyanu junction, ologuneru,
-                    Eleyele road. Ibadan
-                  </p>
-                </EventDescription>
-                <EventLocation>
-                  <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
-                </EventLocation>
-              </EventInformation>
-            </WeddingContent> */}
-          </OtherInfo>
-        </Infopadding>
+        <OtherInfo>
+          <EventTime>
+            <p>Engagement</p>
+            <p>-</p>
+            <p>7AM</p>
+          </EventTime>
+          <EventInformation>
+            <EventDescription>
+              <p>
+                Mayjoy event hall, Afin iyanu junction, ologuneru,
+                Eleyele road. Ibadan.
+              </p>
+            </EventDescription>
+            <EventLocation>
+              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
+            </EventLocation>
+          </EventInformation>
+        </OtherInfo>
+
+        <OtherInfo>
+          <EventTime>
+            <p>Church</p>
+            <p>-</p>
+            <p>7AM</p>
+          </EventTime>
+          <EventInformation>
+            <EventDescription>
+              <p>Eleyele Baptist Church, Eleyele Ibadan.</p>
+            </EventDescription>
+            <EventLocation>
+              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
+            </EventLocation>
+          </EventInformation>
+        </OtherInfo>
+
+        <OtherInfo>
+          <EventTime>
+            <p>Engagement</p>
+            <p>-</p>
+            <p>7AM</p>
+          </EventTime>
+          <EventInformation>
+            <EventDescription>
+              <p>
+                Mayjoy event hall, Afin iyanu junction, ologuneru,
+                Eleyele road. Ibadan.
+              </p>
+            </EventDescription>
+            <EventLocation>
+              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
+            </EventLocation>
+          </EventInformation>
+        </OtherInfo>
       </MoreInfos>
     </>
   );
 };
 
-const MoreInfos = styled.div``;
+const MoreInfos = styled.div`
+  margin-top: 10px;
+  // border: 2px solid red;
+  font-family: montaga;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
 
-const Infopadding = styled.div``;
+const InfoDate = styled.div`
+  // border: 1px solid blue;
+  text-align: center;
+  font-family: montaga;
 
+  div:first-child {
+    p {
+      font-size: 80px;
+      line-height: 0px;
+    }
+  }
 
-const InfoDate = styled.div``;
+  div:last-child {
+    p {
+      font-size: 30px;
+      line-height: 0px;
+    }
+  }
+`;
 
-const OtherInfo = styled.div``;
+const OtherInfo = styled.div`
+  // border: 2px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // justify-content: space-between;
+  gap: 10rem;
 
-const WeddingContent = styled.div``;
+  @media (max-width: 728px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+`;
 
+const EventTime = styled.div`
+  // border: 2px solid purple;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: -4rem;
+  width: 14rem;
 
+  @media (max-width: 728px) {
+    margin-top: 1px;
+  }
+`;
 
+const EventInformation = styled.div`
+  // border: 2px solid black;
+  width: 35rem;
+
+  @media (max-width: 728px){
+    width: 100%;
+  }
+`;
+
+const EventLocation = styled.div``;
+
+const EventDescription = styled.div`
+  p {
+    font-size: 20px;
+  }
+`;
+
+const ButtonClick = styled.button`
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-family: montaga;
+  background-color: #a07250;
+  color: white;
+  width: auto;
+  font-size: 15px;
+`;
