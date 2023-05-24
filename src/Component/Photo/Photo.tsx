@@ -4,8 +4,6 @@ import {
   PhotoTitle,
   PotoContainer,
   PictureFlex,
-  ThePicture,
-  TheOtherPicture,
   SecondPictureFlex,
   ThirdPictureFlex,
 } from "../Style";

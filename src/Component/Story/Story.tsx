@@ -7,7 +7,7 @@
 // } from "../Style";
 
 import { styled } from "styled-components";
-import Picture from "../../public/picture1.jpg";
+import Picture from "../../public/picture3.jpg";
 
 export const StoryTeller = () => {
   return (
@@ -47,14 +47,6 @@ export const StoryTeller = () => {
               growth.
             </p>
             <p>
-              As time went on, our love spread beyond the confines of our
-              relationship, just like the aroma of freshly toasted bread wafting
-              through a kitchen. We became a source of warmth and comfort for
-              those around them, sharing our love and spreading joy wherever
-              they went. Our love was not just a personal journey but a beacon
-              of hope and inspiration for others.
-            </p>
-            <p>
               Today, we stand together, our love like a hearty breakfast,
               nourishing and fulfilling. We have built a foundation rooted in
               God's love, truth, trust, and mutual support, much like the sturdy
@@ -62,11 +54,11 @@ export const StoryTeller = () => {
               simplest things in life, like a humble slice of toast, can become
               a symbol of love and affection when shared with someone special.
             </p>
-            <p>God is indeed Love.</p>
+            <p>God is indeed Love!!!</p>
           </div>
         </BackgroundStory>
         <StoryImage>
-          <img src={Picture} alt="image" />
+          <img src={Picture} alt=""/>
         </StoryImage>
       </TellMeStory>
     </>
@@ -74,6 +66,10 @@ export const StoryTeller = () => {
 };
 
 const TellMeStory = styled.div`
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
 
 const BackgroundStory = styled.div`
@@ -88,22 +84,25 @@ const BackgroundStory = styled.div`
   justify-content: center;
 
   p:first-child {
-    font-size: 100px;
+    font-size: 56px;
     font-weight: 400;
 
     @media (max-width: 820px){
-      font-size: 80px;
+      font-size: 40px;
     }
   }
 
   div {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    width: 90%;
+    width: 55%;
+    height: 55%;
     text-align: justify;
 
     @media (max-width: 820px){
       font-size: 15px;
+      width: 85%;
+      height: auto;
     }
 
     p:first-child {
@@ -120,10 +119,15 @@ const StoryImage = styled.div`
   margin-top: -12rem;
   display: flex;
   align-content: center;
+  width: 60%;
 
   img{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 820px){
+    width: 75%;
+
+    }
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Photo1 from "../public/picture1.jpg";
-import Photo2 from "../public/picture2.jpg";
+// import Photo2 from "../public/picture2.jpg";
 import Photo3 from "../public/picture3.jpg";
 import Photo4 from "../public/picture4.jpg";
 import Photo5 from "../public/picture5.jpg";

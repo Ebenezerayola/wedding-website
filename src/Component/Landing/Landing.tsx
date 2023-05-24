@@ -1,5 +1,5 @@
 import * as React from "react";
-import Picture from "./picture/picture1.jpg";
+import Picture from "./picture/picture2.jpg";
 import { styled } from "styled-components";
 // import {
 //   CouplesNameStyles,

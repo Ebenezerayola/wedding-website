@@ -1,37 +1,31 @@
 import { useState } from "react";
 import { styled } from "styled-components";
 
-// import {
-//   MoreInfos,
-//   Infopadding,
-//   InfoDate,
-//   OtherInfo,
-//   WeddingContent,
-//   EventTime,
-//   EventInformation,
-//   EventTitle,
-//   EventDescription,
-//   EventLocation,
-//   ButtonClick,
-//   ModalStyle,
-//   ModalBorder,
-//   Ptag,
-// } from "../Style";
-
 export const MoreInfomation = () => {
   const openNewTab = (url: string) => {
     window.open(url, "_blank");
   };
 
-  const handleClick = () => {
-    const url = "https://maps.app.goo.gl/NgGRu2o8EwQzedpU7";
-    openNewTab(url);
-  };
-
-  const handleClicks = () => {
-    const url = "https://maps.app.goo.gl/PEMZ5cxzzwonNNs67";
-    openNewTab(url);
-  };
+  const EventInfo = [
+    {
+      Title: "Engagement",
+      Time: "7AM",
+      Desc: "Mayjoy event hall, Afin iyanu junction, ologuneru, Eleyele road. Ibadan.",
+      Link: 'https://maps.app.goo.gl/NgGRu2o8EwQzedpU7'
+    },
+    {
+      Title: "Church",
+      Time: "9AM",
+      Desc: "Eleyele Baptist Church, Eleyele Ibadan.",
+      Link: "https://maps.app.goo.gl/PEMZ5cxzzwonNNs67"
+    },
+    {
+      Title: "Reception",
+      Time: "12Noon",
+      Desc: "Mayjoy event hall, Afin iyanu junction, ologuneru, Eleyele road. Ibadan.",
+      Link: 'https://maps.app.goo.gl/NgGRu2o8EwQzedpU7'
+    },
+  ]
   return (
     <>
       <MoreInfos>
@@ -40,63 +34,33 @@ export const MoreInfomation = () => {
             <p>Itinerary</p>
           </div>
           <div>
-            <p style={{ color: "#A07250" }}>Saturday, June 23</p>
+            <p style={{ color: "#A07250" }}>Saturday, June 24</p>
           </div>
         </InfoDate>
+      {
+        EventInfo.map((event) =>{
+          return (
+            <OtherInfo>
+              <EventTime>
+                <p>{event.Title}</p>
+                <p>-</p>
+                <p>{event.Time}</p>
+              </EventTime>
+              <EventInformation>
+                <EventDescription>
+                  <p>
+                    {event.Desc}
+                  </p>
+                </EventDescription>
+                <EventLocation>
+                  <ButtonClick onClick={() => openNewTab(event.Link)}>Map to Venue</ButtonClick>
+                </EventLocation>
+              </EventInformation>
+            </OtherInfo>
+          )
+        })
+      }
 
-        <OtherInfo>
-          <EventTime>
-            <p>Engagement</p>
-            <p>-</p>
-            <p>7AM</p>
-          </EventTime>
-          <EventInformation>
-            <EventDescription>
-              <p>
-                Mayjoy event hall, Afin iyanu junction, ologuneru,
-                Eleyele road. Ibadan.
-              </p>
-            </EventDescription>
-            <EventLocation>
-              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
-            </EventLocation>
-          </EventInformation>
-        </OtherInfo>
-
-        <OtherInfo>
-          <EventTime>
-            <p>Church</p>
-            <p>-</p>
-            <p>7AM</p>
-          </EventTime>
-          <EventInformation>
-            <EventDescription>
-              <p>Eleyele Baptist Church, Eleyele Ibadan.</p>
-            </EventDescription>
-            <EventLocation>
-              <ButtonClick onClick={handleClicks}>Map to Venue</ButtonClick>
-            </EventLocation>
-          </EventInformation>
-        </OtherInfo>
-
-        <OtherInfo>
-          <EventTime>
-            <p>Engagement</p>
-            <p>-</p>
-            <p>7AM</p>
-          </EventTime>
-          <EventInformation>
-            <EventDescription>
-              <p>
-                Mayjoy event hall, Afin iyanu junction, ologuneru,
-                Eleyele road. Ibadan.
-              </p>
-            </EventDescription>
-            <EventLocation>
-              <ButtonClick onClick={handleClick}>Map to Venue</ButtonClick>
-            </EventLocation>
-          </EventInformation>
-        </OtherInfo>
       </MoreInfos>
     </>
   );
@@ -104,7 +68,6 @@ export const MoreInfomation = () => {
 
 const MoreInfos = styled.div`
   margin-top: 10px;
-  // border: 2px solid red;
   font-family: montaga;
   display: flex;
   flex-direction: column;
@@ -112,7 +75,6 @@ const MoreInfos = styled.div`
 `;
 
 const InfoDate = styled.div`
-  // border: 1px solid blue;
   text-align: center;
   font-family: montaga;
 
@@ -132,28 +94,30 @@ const InfoDate = styled.div`
 `;
 
 const OtherInfo = styled.div`
-  // border: 2px solid yellow;
+  
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
-  // justify-content: space-between;
-  gap: 10rem;
+  padding-left: 30px;
+  gap: 8rem;
 
   @media (max-width: 728px) {
     flex-direction: column;
     gap: 0.5rem;
+    border: 2px solid red;
+    padding: 0px 10px;
   }
 `;
 
 const EventTime = styled.div`
-  // border: 2px solid purple;
+ 
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: space-between;
   font-size: 20px;
   margin-top: -4rem;
-  width: 14rem;
 
   @media (max-width: 728px) {
     margin-top: 1px;
@@ -179,7 +143,7 @@ const EventDescription = styled.div`
 
 const ButtonClick = styled.button`
   border: none;
-  padding: 20px;
+  padding: 18px 26px;
   cursor: pointer;
   font-family: montaga;
   background-color: #a07250;
