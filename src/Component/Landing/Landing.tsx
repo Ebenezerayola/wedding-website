@@ -41,7 +41,7 @@ export default Landing;
 
 const LandingStyle = styled.div`
   gap: 2%;
-  width: 78%;
+  width: 58%;
 
   @media (max-width: 728px) {
     // margin-bottom: -40vh;

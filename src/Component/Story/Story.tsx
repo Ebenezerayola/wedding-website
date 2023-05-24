@@ -7,7 +7,7 @@
 // } from "../Style";
 
 import { styled } from "styled-components";
-import Picture from "../../public/picture3.jpg";
+import Picture from "../../public/picture16.jpg";
 
 export const StoryTeller = () => {
   return (
